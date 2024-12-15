@@ -65,12 +65,43 @@
                         <a href="registration.html" class="header-login">
                             <img src="img/home/login.svg" alt="" />
                         </a>
-                        <a href="cart.html" class="header-cart">
-                            <div class="header-cart__img">
+                        <div class="header-cart">
+                            <a href="cart.html" class="header-cart__img">
+                                <div class="header-cart__img-count">0</div>
                                 <img src="img/home/cart.svg" alt="" />
+                            </a>
+                            <div class="header-cart__overlay active">
+                                <div class="header-cart__overlay-text">Корзина пуста</div>
+                                <div class="cart-wrapper">
+                                    <div class="cart-goods">
+                                        <div class="cart-goods__btns">
+                                            <div class="cart-goods__btn clear">CLEAR SHOPPING CART</div>
+                                            <div class="cart-goods__btn contine">CONTINUE SHOPPING</div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-info">
+                                        <div class="cart-title">SHIPPING ADRESS</div>
+                                        <form class="cart-form">
+                                            <input type="text" class="cart-form__input" placeholder="Bangladesh" />
+                                            <input type="text" class="cart-form__input" placeholder="State" />
+                                            <input type="text" class="cart-form__input" placeholder="Postcode / Zip" />
+                                            <button type="submit" class="cart-form__btn">GET A QUOTE</button>
+                                        </form>
+                                        <div class="cart-pay">
+                                            <div class="cart-pay__top">
+                                                <span>SUB TOTAL </span>
+                                                <span>$</span>
+                                            </div>
+                                            <div class="cart-pay__bot">
+                                                <span>GRAND TOTAL</span>
+                                                <span class="cart-pay__total">$<span></span></span>
+                                            </div>
+                                            <div class="cart-pay__bnt">PROCEED TO CHECKOUT</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="header-cart__overlay"></div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -125,7 +156,7 @@
             </div>
             <div class="main-products products">
                 <div class="container">
-                    <div class="products-title">Fetured Items 2</div>
+                    <div class="products-title">Fetured Items</div>
                     <div class="products-text">Shop for items based on what we featured in this week</div>
                     <div class="products-wrapper"></div>
                     <a href="catalog.html" class="products-link">Browse All Product</a>
