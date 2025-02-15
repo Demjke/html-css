@@ -16,6 +16,12 @@ $form: #e1e1e1;
     font-family: "Lato", sans-serif;
     box-sizing: border-box;
 }
+html,
+body {
+    height: auto;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
 a {
     text-decoration: none;
 }
@@ -887,11 +893,10 @@ a {
         border: 1px solid rgba($lightGray, 0.2);
         border-radius: 5px;
         padding: 15px;
-        &__prev {
-            display: flex;
-        }
+        &__prev,
         &__next {
             display: flex;
+            cursor: pointer;
         }
         &__nums {
             display: flex;
@@ -902,19 +907,15 @@ a {
             font-weight: 300;
             line-height: 19px;
             color: $lightGray;
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
             &.active {
                 color: $pink;
             }
             &:hover {
                 color: $pink;
-            }
-            &-dots {
-                font-size: 16px;
-                font-weight: 300;
-                line-height: 19px;
-                color: $lightGray;
-            }
-            &_last {
             }
         }
     }
